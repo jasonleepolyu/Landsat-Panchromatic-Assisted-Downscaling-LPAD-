@@ -1,10 +1,13 @@
 REQUIREMENT:
-Matlab R1014a+ (8.3.0.532) on Windows or Unix (lower version Matlab could be run but not tested yet)
-Matlab Mapping Toolbox (this is only for geotiff reading/writing)
+	Matlab R1014a+ (8.3.0.532) on Windows or Unix (lower version Matlab could be run but not tested yet)
+	Matlab Mapping Toolbox (this is only for geotiff reading/writing)
+
+Contact information:
+	Dr. Hankui k. Zhang (hankui.zhang@sdstate.edu), GSCE, SDSU, US
+	Dr. Zhongbin Li (zhongbin.li@sdstate.edu), GSCE, SDSU, US
 
 Usage:
-1 Use 'ProPADS30to15' to finish the step one of PADS, i.e., downscaling 30 m Landsat 8 OLI bands into 15 m using 15 m panchromatic band; 
-Parameters need changes: 
+1 'ProPADS30to15.m' is used to finish the step one of PADS, i.e., downscaling 30 m Landsat 8 OLI bands into 15 m using 15 m panchromatic band. Parameters need changes: 
     %% (1) 'dataDir': the data directory to store 15 m panchromatic and 30 m OLI files
     %% (2) 'PanFile': the pan file name
     %% (3) 'MSFile': the low resolution MS file name, keep it the original size (do not resample)
@@ -14,15 +17,18 @@ Parameters need changes:
     %% (5) 'sharped_index':  which bands are to be downscaled/sharpened 
     %% (6) 'scaleF':  the re-scale factor of the reflectance 
 	
-	Note RGB bands must be included and the rgb_index must be correctly specified.
+    Note RGB bands must be included and the rgb_index must be correctly specified.
 	
 2 Note that geotiff formats with correct UTM coordinates information are needed for 30 m and 15 m bands;
 
-3 Both cropped (without resampling) L1T and original size L1T data can be used as input;
+3 Both cropped (without resampling) L1T and original L1T data can be used as input;
 
 4 When cropping the data, make sure the geographic extent of the 30 m images are larger than that of the 15 m panchromatic image, the software will automatically crop the MS image according to the panchromatic extent; 
 
 5 If the size of the panchromatic has odd number, the last row or column will not be processed. This is applied to the original L1T images. Since original L1T images have m*n 30 m pixels and (2m-1)*(2n-1) 15 m panchromatic pixels, the output will have (2m-2)*(2n-2) 15 m downscaled pixels.
+
+6 'bilinear_cubic_resampling.m' and 'bilinear_cubic_resampling_30.m' are used to reproject the 15 m and 30 m Landsat data into the Sentinel-2 20 m resolution.
+
 
 References:
 
