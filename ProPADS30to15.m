@@ -13,10 +13,10 @@
 	%% START *********************************************************************************************************************************
 	%% important input data parameters need change for your own data
         
-    dataDir = 'L:\\david_roy\\Hankui\\dull\\PADS_OLI_delivered\\';
-    PanFile = '15m_B8.tif';
-    MSFile = '30m_B1_B7.tif';
-    outprefix='15m_B1_B7';
+    dataDir = 'L:\\david_roy\\Hankui\\dull\\PADS_OLI_delivered\\'; % data directory
+    PanFile = '15m_B8.tif'; % data filename
+    MSFile = '30m_B1_B7.tif'; % data filename
+    outprefix='15m_B1_B7'; % output file prefix
 
     sharped_index = 1:7;
     rgb_index = 2:4;
