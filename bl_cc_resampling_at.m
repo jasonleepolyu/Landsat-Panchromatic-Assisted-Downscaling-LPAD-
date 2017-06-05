@@ -2,7 +2,6 @@ function Output = bl_cc_resampling_at(I, scale_factor)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%            I: the original image or bands
 %%%            scale_factor
-%%%            Zhongbin LI
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% pad image by duplicate the last row and column
 [nrow, ncol] = size(I);
