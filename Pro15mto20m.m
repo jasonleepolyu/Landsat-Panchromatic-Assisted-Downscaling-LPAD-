@@ -1,7 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% bilinear and cubic convolution resampling           %%%%%
-%%% Zhongbin Li, SDSU, SD, USA, May-20-2017  %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 clear all; close all; clc
 
 %% Input original image
