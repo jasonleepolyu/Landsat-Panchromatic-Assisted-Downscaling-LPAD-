@@ -8,7 +8,8 @@ Matlab Mapping Toolbox (this is only for geotiff reading/writing)
 Usage:
 1 Use 'ProPADS30to15' to finish the step one of PADS, i.e., downscaling 30 m Landsat 8 OLI bands into 15 m using 15 m panchromatic band; 
 Parameters need changes: 
-	%% (1) 'dataDir': the data directory to store 15 m panchromatic and 30 m OLI files
+
+    %% (1) 'dataDir': the data directory to store 15 m panchromatic and 30 m OLI files
     %% (2) 'PanFile': the pan file name
     %% (3) 'MSFile': the low resolution MS file name, keep it the original size (do not resample)
     
@@ -30,7 +31,9 @@ Reference:
 
 Aiazzi B.; Baronti S.; Selva M.; Alparone L., Bi-cubic interpolation for shift-free pan-sharpening. ISPRS Journal of Photogrammetry and Remote Sensing. 2013, 86, 65-76.
 
+Yan, L., Roy, D. P., Zhang, H., Li, J., & Huang, H. (2016). An automated approach for sub-pixel registration of Landsat-8 Operational Land Imager (OLI) and Sentinel-2 Multi Spectral Instrument (MSI) imagery. Remote Sensing, 8(6), 520.
+
 Zhang H.K., Roy D.P., Computationally inexpensive Landsat 8 operational land imager (OLI) pansharpening. Remote Sensing. 2016, 8(3), 180.
 
-Li Z., Zhang H.K., Roy D.P., Yan L., Panchromatic Assisted Downscaling of Landsat-8 30 m Reflective Band Data to Sentinel-2 20 m Resolution. Remote Sensing. In review.
+Li Z., Zhang H.K., Roy D.P., Yan L., Panchromatic Assisted Downscaling of Landsat-8 30 m Reflective Band Data to Sentinel-2 20 m Resolution. Remote Sensing (Under review).
 
