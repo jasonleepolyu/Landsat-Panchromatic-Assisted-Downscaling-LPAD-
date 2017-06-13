@@ -14,7 +14,7 @@ Contact information:
 
 Usage:
 
-First, 'ProPADS30to15.m' is used to finish the first step of PADS, i.e., downscaling 30 m Landsat 8 OLI bands into 15 m using 15 m panchromatic band. Parameters need changes: 
+First, 'ProLPAD30to15.m' is used to finish the first step of LPAD, i.e., downscaling 30 m Landsat 8 OLI bands into 15 m using 15 m panchromatic band. Parameters need changes: 
 
     	%% (1) 'dataDir': the data directory to store 15 m panchromatic and 30 m OLI files
     	%% (2) 'PanFile': the pan file name
@@ -36,11 +36,11 @@ First, 'ProPADS30to15.m' is used to finish the first step of PADS, i.e., downsca
 	5) If the size of the panchromatic image has odd number, the last row or column will not be processed. Since original L1T images have m*n 30 m pixels and (2m-1)*(2n-1) 15 m panchromatic pixels, the output will have (2m-2)*(2n-2) 15 m downscaled pixels.
 
 
-Then, 'ProPADS15to20.m' is used to finish the second step of PADS, i.e., reprojecting the 15 m (or 30 m) Landsat data into the Sentinel-2 20 m resolution.
+Then, 'ProLPAD15to20.m' is used to finish the second step of LPAD, i.e., reprojecting the 15 m (or 30 m) Landsat data into the Sentinel-2 20 m resolution.
 
 Notes:
 
-	1) the input data of 'ProPADS15to20.m' is the output of 'ProPADS30to15.m';
+	1) the input data of 'ProLPAD15to20.m' is the output of 'ProLPAD30to15.m';
 	
 	2) both bilinear and cubic convolution resampling approaches are provided; set the variable 'resampler='bl' or 'cc'' to choose;
 	
