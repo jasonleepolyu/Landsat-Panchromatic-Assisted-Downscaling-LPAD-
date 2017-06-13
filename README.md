@@ -2,10 +2,12 @@
 Pansharpening of Landsat 30 m data to 15 m resolution and then reprojection of the Landsat 15 m data into Sentinel-2 20 m resolution
 
 REQUIREMENT:
+
 	Matlab R1014a+ (8.3.0.532) on Windows or Unix (lower version Matlab could be run but not tested yet)
 	Matlab Mapping Toolbox (this is only for geotiff reading/writing)
 
 Contact information:
+
 	Dr. David P. Roy (david.roy@sdstate.edu), GSCE, SDSU, US
 	Dr. Hankui K. Zhang (hankui.zhang@sdstate.edu), GSCE, SDSU, US
 	Dr. Zhongbin Li (zhongbin.li@sdstate.edu), GSCE, SDSU, US
@@ -37,6 +39,7 @@ First, 'ProPADS30to15.m' is used to finish the first step of PADS, i.e., downsca
 Then, 'ProPADS15to20.m' is used to finish the second step of PADS, i.e., reprojecting the 15 m (or 30 m) Landsat data into the Sentinel-2 20 m resolution.
 
 Notes:
+
 	1) the input data of 'ProPADS15to20.m' is the output of 'ProPADS30to15.m';
 	
 	2) both bilinear and cubic convolution resampling approaches are provided; set the variable 'resampler='bl' or 'cc'' to choose;
