@@ -1,7 +1,7 @@
-% function ProPADS30to15
+% function ProLPAD30to15
 
     %% Input data parameters need change:
-	%% (1) 'dataDir': the data directory to store 15 m panchromatic and 30 m OLI files
+    %% (1) 'dataDir': the data directory to store 15 m panchromatic and 30 m OLI files
     %% (2) 'PanFile': the pan file name
     %% (3) 'MSFile': the low resolution MS file name, keep it the original size (do not resample)
     
