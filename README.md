@@ -55,4 +55,4 @@ Zhang H.K. and Roy D.P., Computationally inexpensive Landsat 8 operational land 
 
 Yan, L., Roy, D. P., Zhang, H., Li, J., & Huang, H. (2016). An automated approach for sub-pixel registration of Landsat-8 Operational Land Imager (OLI) and Sentinel-2 Multi Spectral Instrument (MSI) imagery. Remote Sensing, 8(6), 520.
 
-Li Z., Zhang H.K., Roy D.P., Yan L., and Li J. Panchromatic Assisted Downscaling of Landsat-8 30 m Reflective Band Data to Sentinel-2 20 m Resolution. Remote Sensing (Under review).
+Li Z., Zhang H.K., Roy D.P., Yan L., and Li J. Landsat 15-m Panchromatic Assisted Downscaling (LPAD) of the 30 m Reflective Wavelength Bands to Sentinel-2 20-m Resolution (2017). Remote Sensing.
